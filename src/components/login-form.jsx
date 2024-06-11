@@ -27,9 +27,9 @@ function LoginForm() {
         <div className="form-container">
             <div className="form">
                 <div className="form-content">
-                    <p>Name</p>
+                    <p>E-Mail</p>
                     <input 
-                        type="text" 
+                        type="email" 
                         value={name}
                         onChange={event => setName(event.target.value)}
                     />
