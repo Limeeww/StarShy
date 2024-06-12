@@ -42,7 +42,7 @@ function LoginForm() {
                         onChange={event => setPassword(event.target.value)}
                     />
                     <div className="show-pass">
-                        <p className="show-pass-title">Show pass</p>
+                        <p className="show-pass-title">Show password</p>
                         <input type="checkbox" onChange={event => setIsHide(!event.target.checked)}/>
                     </div>
                 </div>
