@@ -1,13 +1,10 @@
 .geolocations-container {
     display: flex;
     justify-content: center;
-    margin: 1rem 0 0 0;
-}
-
-.buttons {
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgb(141, 209, 124);
+    min-height: 95vh;
 }
 
 .place-content {

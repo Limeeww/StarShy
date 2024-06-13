@@ -182,14 +182,16 @@ function Account() {
                                     <p>{user.name}</p>
                                     <p>{user.email}</p>
                                     <p>{user.country}</p>
-                                    <button onClick={editProfile}>Edit profile</button>
-                                    <p>Longitude: {geo.longitude}</p>
-                                    <p>Latitude: {geo.latitude}</p>
-                                    <button onClick={getGeo}>Get My Geolocation</button><br />
-                                    <button onClick={() => navigate('/geolocation', { replace: true })}>Geolocation</button>
+                                    <div className="geo-buttons-container">
+                                        <button onClick={editProfile}>Edit profile</button>
+                                        <p>Longitude: {geo.longitude}</p>
+                                        <p>Latitude: {geo.latitude}</p>
+                                        <button onClick={getGeo}>Get My Geolocation</button><br />
+                                        <button onClick={() => navigate('/geolocation', { replace: true })}>Geolocation</button>
+                                    </div>
                                 </div>
                                 <div className="user-info-avatar">
-                                    <img src={avatar} alt="avatar" width="35px" height="35px"/>
+                                    <img src={avatar} alt="avatar" width="100px" height="100px"/>
                                     <input type="file" onChange={event => setNewAvatar(event.target.files[0])}/>
                                     <button onClick={uploadAvatar}>Choose avatar</button>
                                 </div>

@@ -1,50 +1,140 @@
-.account-container{
+.account-container {
     display: flex;
     justify-content: center;
+    padding: 2rem;
+    background-color: rgb(141, 209, 124);
+    min-height: 95vh;
 }
 
 .account-content {
     min-width: 900px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.user-info{
+.user-info {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 2rem;
 }
 
-.user-info-avatar{
+.user-info-title{
+    gap: 2rem;
+}
+
+.user-info-avatar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
-.submit-logout{
-    margin: .5rem 0 0 0;
-    padding: .5rem;
+.user-info-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+    margin-bottom: 1rem;
 }
 
-.upload-file-form{
+.user-info-avatar p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.submit-logout {
+    margin: 0.5rem 0 0 0;
+    padding: 0.75rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.submit-logout:hover {
+    background-color: #0056b3;
+}
+
+.upload-file-form {
     margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.user-files{
+.upload-file-form input[type="file"] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.user-files {
     margin: 2rem 0 0 0;
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
 }
 
-.user-file-list{
+.user-file-list {
     margin: 1rem 0 0 0;
-    padding: 0 1rem 0 1rem;
-    border: 1px solid black;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
-.file-container{
+.file-container {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
-    padding: .25rem;
-    margin: 1rem 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #f9f9f9;
 }
 
-.file-name{
+.file-container:hover {
+    background-color: #e0e0e0;
+}
+
+.file-name {
     display: inline-block;
+    font-size: 1rem;
+}
+
+.geo-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.geo-buttons-container button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff9d00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.geo-buttons-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.geo-buttons-container p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
 }
