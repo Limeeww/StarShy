@@ -9,7 +9,7 @@ import {
     Marker
 } from "react-simple-maps";
 
-const geoUrl = "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 function Geolocation() {
 
@@ -178,4 +178,4 @@ function Geolocation() {
     )
 }
 
-export default Geolocation
+export default Geolocation;

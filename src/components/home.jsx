@@ -5,7 +5,7 @@ import homePageStyles from '../styles/home-page-styles.css';
 import linkStyles from '../styles/link-styles';
 
 function Home() {
-
+    console.log(process.env.REACT_APP_ID);
     return(
         <div className={homePageStyles}>
             <div className="home-page-container">
