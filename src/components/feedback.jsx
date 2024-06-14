@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Backendless from "backendless";
-import '../styles/form-styles.css';
+import '../styles/feedback.css';
 
 function Feedback() {
 
@@ -14,7 +14,7 @@ function Feedback() {
         try {
             const text = new Backendless.Bodyparts()
             text.textmessage = emailText
-            await Backendless.Messaging.sendEmail(emailTitle, text, ['oleksandr.snytko@nure.ua'])
+            await Backendless.Messaging.sendEmail(emailTitle, text, ['anastasiia.starukhina@nure.ua'])
             alert('Your message was sent')
         } catch(err) {
             console.log(err)
@@ -22,22 +22,22 @@ function Feedback() {
     }
 
     return (
-        <div className="form-container">
+        <div className="form-container-feedback">
             <div className="form">
                 <h2>Feedback</h2>
-                <div className="form-content">
+                <div className="form-content-feedback">
                     <input type="radio" value={report} onChange={event => setEmailTitle(event.target.value)}/>
                     <p>Report</p>
                     <input type="radio" value={advice} onChange={event => setEmailTitle(event.target.value)}/>
                     <p>Advice</p>
                 </div><br />
-                <div className="form-content">
+                <div className="form-content-feedback">
                     <p>Your text</p>
                     <textarea cols="30" rows="10" value={emailText} onChange={event => setEmailText(event.target.value)}>
 
                     </textarea>
                 </div><br />
-                <div className="form-content">
+                <div className="form-content-feedback">
                     <button onClick={send}>Send</button>
                 </div>
             </div>
